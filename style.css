@@ -44,3 +44,7 @@ body {
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
+
+#peterhead a, #dannyhead a, #agumbehead a, #albertohead a {
+    cursor: pointer;
+}
