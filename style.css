@@ -45,6 +45,6 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
-#peterhead a, #dannyhead a, #agumbehead a, #albertohead a {
+#peterhead a, #dannyhead a, #agumbehead a, #albertohead a, .navbar-text a {
     cursor: pointer;
 }
