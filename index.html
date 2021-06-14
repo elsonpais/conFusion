@@ -31,7 +31,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal"><span class="fa fa-sign-in"> Login</span></a>
+                    <a id="loginButton"><span class="fa fa-sign-in"> Login</span></a>
                 </span>            
            </div>     
         </div>
@@ -156,8 +156,7 @@
                     <img src="img/logo.png" alt="ristorante con fusion" class="img-fluid justify-content-center">
                 </div>
                 <div class="col-12 col-sm-3 text-center align-self-center">
-                    <a class="btn btn-warning btn-block btn-sm"
-                    data-toggle="modal" data-target="#reservetablemodal">Reserve Table</a>
+                    <a class="btn btn-warning btn-block btn-sm" id="reserveTableButton">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -304,6 +303,12 @@
 <script>
     $(document).ready(function() {
         $('#mycarousel').carousel({interval: 2000});
+        $("#loginButton").click(function() {
+            $("#loginModal").modal('show');
+        });
+        $("#reserveTableButton").click(function() {
+            $("#reservetablemodal").modal("show");
+        });
         $('#carouselButton').click(function() {
             if ($('#carouselButton').children('span').hasClass('fa-pause')) {
                 $('#mycarousel').carousel("pause");

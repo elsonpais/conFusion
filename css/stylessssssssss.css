@@ -55,12 +55,3 @@ body {
 
 #peterhead a, #dannyhead a, #agumbehead a, #albertohead a, .navbar-text a {
   cursor: pointer; }
-
-.modal-content .modal-header {
-  background: #512DA8;
-  color: floralwhite; }
-  .modal-content .modal-header button {
-    color: floralwhite; }
-
-.modal-content .modal-body {
-  background: #D1C4E9; }
